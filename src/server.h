@@ -42,6 +42,10 @@
 #include <systemd/sd-daemon.h>
 #endif
 
+#ifdef ANDROIDPATCH
+#include "androidpatch.h"
+#endif
+
 typedef long long mstime_t; /* millisecond time type. */
 typedef long long ustime_t; /* microsecond time type. */
 
